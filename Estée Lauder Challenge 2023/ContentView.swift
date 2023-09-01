@@ -11,13 +11,36 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack {
+        NavigationStack{
             
-            Text("Hello, world!")
+            ZStack{
+                
+                VStack {
+                    
+                    Text("Welcome to the Estée Lauder App! <3")
+                        .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color(red: 0.81, green: 0.266, blue: 0.998))
+                        .multilineTextAlignment(.center)
+                    
+                    Image("imageOne")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(30)
+                    
+                }
+                .padding()
+                
+                // NavigationLink(destination: ) {
+                // Text("Begin!")
+                // }
+                
+            }
             
         }
-        .padding()
+        
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
