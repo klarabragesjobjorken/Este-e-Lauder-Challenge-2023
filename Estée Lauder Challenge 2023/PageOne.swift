@@ -57,7 +57,9 @@ struct PageOne: View {
             }
             
         }
+        
     }
+    
 }
 
 struct PageOne_Previews: PreviewProvider {
